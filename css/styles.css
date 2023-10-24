@@ -63,15 +63,20 @@ ul {
 }
 
 .header {
-  border-bottom: 1px solid #e7e9fc;
+  /*border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+*/
+}
+
+.header-for-pc {
+  display: none;
 }
 
 .header-container {
   display: flex;
   align-items: center;
-  gap: 332px;
+  /*gap: 332px;*/
 }
 
 .header-navigation {
@@ -105,6 +110,57 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
+}
+.header-for-mobile {
+  height: 56px;
+  padding: 16px;
+  border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
+  background: var(--WHITE, #fff);
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo-mob {
+  color: #4d5ae5;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  margin-right: 146px;
+}
+
+.header-logo-part-mob {
+  color: #2e2f42;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+}
+
+.menu-open-mob-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #fff;
+  width: 100%;
+}
+
+.menu-open-mob {
+  /*fill: #2f2f37;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 24px;
+  height: 24px;*/
 }
 
 .header-menu-list-one {
@@ -150,6 +206,7 @@ ul {
 
 .header-address {
   font-style: normal;
+  margin-left: auto;
 }
 
 .header-contacts {
@@ -484,16 +541,23 @@ ul {
 
 .footer {
   background: #2e2f42;
-  padding: 100px 0;
+  padding: 96px 0;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .container-footer {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
 }
 
 .container-footer-webstudio {
-  margin-right: 120px;
+}
+.foter-logo-mob {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-logo {
@@ -522,7 +586,17 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  max-width: 264px;
+  max-width: 288px;
+  font-weight: 400;
+}
+
+.social-media-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 72px;
+  margin-top: 72px;
 }
 
 .container-footer-two {
@@ -570,7 +644,7 @@ ul {
 }
 
 .footer-form {
-  margin-left: 80px;
+  /* margin-left: 80px;*/
 }
 
 .footer-subscribe {
@@ -580,6 +654,8 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
 }
 
 .form {
@@ -587,6 +663,7 @@ ul {
   justify-content: center;
   align-items: center;
   gap: 24px;
+  flex-wrap: wrap;
 }
 
 .form-label {
@@ -874,6 +951,43 @@ ul {
     max-width: 768px;
   }
 
+  .header-for-pc {
+    display: flex;
+  }
+
+  .header-for-mobile {
+    display: none;
+  }
+
+  .header-navigation {
+    display: flex;
+    background-color: white;
+    align-items: center;
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-logo {
+    margin-right: 120px;
+  }
+
+  .header-menu-list-one {
+    margin-right: 121px;
+  }
+
+  .header-contacts {
+    display: block;
+  }
+
+  .header-contacts-main {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+  }
+
   .main {
     padding-top: 112px;
     padding-bottom: 112px;
@@ -925,6 +1039,23 @@ ul {
   .our-team {
     gap: 64px 24px;
   }
+
+  .container-footer {
+    justify-content: center;
+  }
+
+  .container-footer-webstudio {
+    margin-right: 24px;
+    margin-bottom: 72px;
+  }
+
+  .social-media-footer {
+    display: block;
+  }
+
+  .footer-subscribe {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -932,6 +1063,61 @@ ul {
     padding-left: 15px;
     padding-right: 15px;
     max-width: 1158px;
+  }
+
+  .header {
+    border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  }
+
+  .header-logo {
+    color: #4d5ae5;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    align-items: center;
+    margin-right: 76px;
+    padding: 24px 0;
+    position: relative;
+  }
+
+  .header-logo-part {
+    color: #2e2f42;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    gap: 332px;
+  }
+
+  .header-menu-list-one {
+    margin-right: 332px;
+  }
+
+  .header-contacts {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  .header-contacts-main {
+    color: #434455;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .content-info-svg {
@@ -943,7 +1129,6 @@ ul {
     align-items: center;
     justify-content: center;
     margin-bottom: 8px;
-    display: block;
   }
 
   .main {
@@ -1036,5 +1221,42 @@ ul {
 
   .main-team {
     padding: 120px 0;
+  }
+
+  .footer {
+    padding: 100px 0;
+  }
+
+  .container-footer {
+    display: flex;
+  }
+
+  .container-footer-webstudio {
+    margin-right: 120px;
+  }
+
+  .footer-text {
+    max-width: 264px;
+  }
+
+  .footer-text-two {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+  }
+
+  .footer-form {
+    margin-left: 80px;
+  }
+
+  .footer-subscribe {
+    display: block;
+  }
+
+  .form {
+    flex-wrap: nowrap;
   }
 }
