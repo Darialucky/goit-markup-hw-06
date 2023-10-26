@@ -1168,7 +1168,8 @@ header-contacts-main-mob:focus {
     display: block;
   }
 
-  .footer-form {
+  .foter-logo-mob {
+    display: block;
   }
 
   .modal {
@@ -1359,10 +1360,6 @@ header-contacts-main-mob:focus {
 
   .footer-text {
     max-width: 264px;
-  }
-
-  .footer-logo-mob {
-    justify-content: flex-start;
   }
 
   .social-media-footer {
