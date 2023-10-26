@@ -409,7 +409,7 @@ header-contacts-main-mob:focus {
 
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
-  (min-resolution: 2dpx) {
+  (min-resolution: 2dpi) {
   .main {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -1139,7 +1139,7 @@ header-contacts-main-mob:focus {
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
-    (min-resolution: 2dpx) {
+    (min-resolution: 2dpi) {
     .main {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
@@ -1298,7 +1298,7 @@ header-contacts-main-mob:focus {
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
-    (min-resolution: 2dpx) {
+    (min-resolution: 2dpi) {
     .main {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
