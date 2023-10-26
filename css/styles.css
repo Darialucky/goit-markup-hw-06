@@ -711,7 +711,7 @@ ul {
   margin-left: 16px;
 }
 
-/**=============MODALS===============================================*/
+/**=============MODAL-MOB===============================================*/
 
 .modal-mob {
   display: block;
@@ -841,20 +841,21 @@ header-contacts-main-mob:focus {
   visibility: hidden;
   pointer-events: none;
 }
+/**=============MODAL===============================================*/
 
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 408px;
-  min-height: 584px;
+  width: 288px;
+  min-height: 623px;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 72px 24px 24px 24px;
+  padding: 72px 16px 24px 16px;
 }
 
 .modal-btn {
@@ -893,7 +894,6 @@ header-contacts-main-mob:focus {
 
 .modal-title {
   text-align: center;
-  max-width: 360px;
   color: #2e2f42;
   font-size: 16px;
   font-weight: 500;
@@ -1170,6 +1170,12 @@ header-contacts-main-mob:focus {
 
   .footer-form {
   }
+
+  .modal {
+    width: 408px;
+    min-height: 584px;
+    padding: 72px 24px 24px 24px;
+  }
 }
 /*==========================1158==========================*/
 
@@ -1315,6 +1321,7 @@ header-contacts-main-mob:focus {
 
   .portfolio {
     row-gap: 78px;
+    margin-bottom: 0;
   }
 
   .portfolio-cover-block-text {
@@ -1342,15 +1349,23 @@ header-contacts-main-mob:focus {
   }
 
   .container-footer {
-    display: flex;
+    flex-wrap: nowrap;
   }
 
   .container-footer-webstudio {
     margin-right: 120px;
+    margin-bottom: 0;
   }
 
   .footer-text {
     max-width: 264px;
+  }
+
+  .footer-logo-mob {
+    justify-content: flex-start;
+  }
+
+  .social-media-footer {
   }
 
   .footer-text-two {
@@ -1372,5 +1387,15 @@ header-contacts-main-mob:focus {
 
   .form {
     flex-wrap: nowrap;
+  }
+
+  .modal {
+    width: 408px;
+    min-height: 584px;
+    padding: 72px 24px 24px 24px;
+  }
+
+  .modal-title {
+    max-width: 360px;
   }
 }
