@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header class="header">
+    <div class="header">
       <div class="header-for-pc">
         <div class="container header-container">
           <nav class="header-navigation">
@@ -71,12 +71,113 @@
         <a href="./index.html" class="header-logo-mob"
           >Web<span class="header-logo-part-mob">Studio</span>
         </a>
-        <button type="button" class="menu-open-mob">
-          <svg class="menu-open-mob-icon" height="24" width="24">
-            <use href="./images/icons.svg#icon-heroicons-solid_menu-1"></use>
-          </svg>
-        </button>
+        <div>
+          <button type="button" class="menu-open-mob">
+            <svg class="menu-open-mob-icon" height="24" width="24">
+              <use href="./images/icons.svg#icon-heroicons-solid_menu-1"></use>
+            </svg>
+          </button>
+          <div class="modal-mob">
+            <div class="modal-mob-open">
+              <button type="button" class="modal-btn-mob">
+                <svg class="modal-btn-icon" width="8" height="8">
+                  <use
+                    href="./images/icons.svg#icon-close-black-18dp-2-1"
+                  ></use>
+                </svg>
+              </button>
+              <div class="menu-mob">
+              <ul class="header-menu-list-mob">
+                  <li>
+                    <a href="./index.html" class="header-menu-list-mob-title"
+                      >Studio</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="header-menu-list-mob-title">Portfolio</a>
+                  </li>
+                  <li>
+                    <a href="" class="header-menu-list-mob-title">Contacts</a>
+                  </li>
+              </ul>
+              </div>
+              <address class="header-address-mob">
+                <ul class="header-contacts-mob">
+                  <li>
+                    <a
+                      href="tel:+110001111111"
+                      class="header-contacts-main-mob"
+                      rel="nooperener noreferrer"
+                      >+11 (000) 111-11-11</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="mailto:info@devstudio.com"
+                      class="header-contacts-main-mob"
+                      rel="nooperener noreferrer"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            
+            <ul class="team-soc-list-mob">
+              <li class="team-soc-item-mob">
+                <a
+                  class="team-soc-item-icon-mob"
+                  href=""
+                  target="_blank"
+                  rel="nooperener noreferrer"
+                >
+                  <svg class="team-soc-icon-mob" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="team-soc-item-mob">
+                <a
+                  class="team-soc-item-icon-mob"
+                  href=""
+                  target="_blank"
+                  rel="nooperener noreferrer"
+                >
+                  <svg class="team-soc-icon-mob" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-soc-item-mob">
+                <a
+                  class="team-soc-item-icon-mob"
+                  href=""
+                  target="_blank"
+                  rel="nooperener noreferrer"
+                >
+                  <svg class="team-soc-icon-mob" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-soc-item-mob">
+                <a
+                  class="team-soc-item-icon-mob"
+                  href=""
+                  target="_blank"
+                  rel="nooperener noreferrer"
+                >
+                  <svg class="team-soc-icon-mob" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
+    </div>
+    
     </header>
 
     <main>
@@ -151,6 +252,7 @@
           <ul class="our-team">
             <li class="our-team-item">
               <img
+                srcset="./images/img1.jpg 1x, ./images/img1-2x-min.jpg 2x"
                 src="./images/img1.jpg"
                 class="our-team-img"
                 alt="Mark Guerrero"
@@ -214,6 +316,7 @@
             </li>
             <li class="our-team-item">
               <img
+                srcset="./images/img2.jpg 1x, ./images/img2-2x-min.jpg 2x"
                 src="./images/img2.jpg"
                 class="our-team-img"
                 alt="Tom Ford"
@@ -277,6 +380,7 @@
             </li>
             <li class="our-team-item">
               <img
+                srcset="./images/img3.jpg 1x, ./images/img3-2x-min.jpg 2x"
                 src="./images/img3.jpg"
                 class="our-team-img"
                 alt="Camila Garcia"
@@ -340,6 +444,7 @@
             </li>
             <li class="our-team-item">
               <img
+                srcset="./images/img4.jpg 1x, ./images/img4-2x-min.jpg 2x"
                 src="./images/img4.jpg"
                 class="our-team-img"
                 alt="Daniel Wilson"
@@ -412,6 +517,7 @@
             <li class="portfolio-item">
               <div class="portfolio-cover-wrap">
                 <img
+                  srcset="./images/bank.jpg 1x, ./images/bank2x-min 2x"
                   src="./images/bank.jpg"
                   class="portfolio-img"
                   alt="Banking App"
@@ -431,6 +537,7 @@
             <li class="portfolio-item">
               <div class="portfolio-cover-wrap">
                 <img
+                  srcset="./images/cash.jpg 1x, ./images/cash2x-mini 2x"
                   src="./images/cash.jpg"
                   class="portfolio-img"
                   alt="Cashless Payment"
@@ -450,6 +557,7 @@
             <li class="portfolio-item">
               <div class="portfolio-cover-wrap">
                 <img
+                  srcset="./images/medit.jpg 1x, ./images/medit2x-min 2x"
                   src="./images/medit.jpg"
                   class="portfolio-img"
                   alt="Meditaion App"
@@ -469,6 +577,7 @@
             <li class="portfolio-item">
               <div class="portfolio-cover-wrap">
                 <img
+                  srcset="./images/taxi.jpg 1x, ./images/taxi2x-min 2x"
                   src="./images/taxi.jpg"
                   class="portfolio-img"
                   alt="Taxi Service"
@@ -489,6 +598,10 @@
             <li class="portfolio-item">
               <div class="portfolio-cover-wrap">
                 <img
+                  srcset="
+                    ./images/screenqq-min.jpg   1x,
+                    ./images/screenqq-min2x-min 2x
+                  "
                   src="./images/screenqq-min.jpg"
                   class="portfolio-img"
                   alt="Screen Illustrations"
@@ -509,6 +622,7 @@
             <li class="portfolio-item">
               <div class="portfolio-cover-wrap">
                 <img
+                  srcset="./images/courses.jpg 1x, ./images/courses2x-min 2x"
                   src="./images/courses.jpg"
                   class="portfolio-img"
                   alt="Online Courses"
@@ -626,107 +740,6 @@
       </div>
     </footer>
     <!----======================================MODAL====================================================-->
-
-    <div class="modal-mob">
-      <div class="modal-mob-open">
-        <button type="button" class="modal-btn-mob">
-          <svg class="modal-btn-icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
-          </svg>
-        </button>
-        <!--<h2 class="studio-mob">Studio</h2>
-        <h2 class="title-mob">Portfolio</h2>
-        <h2 class="title-mob">Contacts</h2>-->
-        <ul class="header-menu-list-mob">
-          <div class="menu-mob">
-            <li>
-              <a href="./index.html" class="header-menu-list-mob-title"
-                >Studio</a
-              >
-            </li>
-            <li>
-              <a href="" class="header-menu-list-mob-title">Portfolio</a>
-            </li>
-            <li>
-              <a href="" class="header-menu-list-mob-title">Contacts</a>
-            </li>
-          </div>
-        </ul>
-
-        <address class="header-address-mob">
-          <ul class="header-contacts-mob">
-            <li>
-              <a
-                href="tel:+110001111111"
-                class="header-contacts-main-mob"
-                rel="nooperener noreferrer"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-            <li>
-              <a
-                href="mailto:info@devstudio.com"
-                class="header-contacts-main-mob"
-                rel="nooperener noreferrer"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
-        </address>
-
-        <ul class="team-soc-list-mob">
-          <li class="team-soc-item">
-            <a
-              class="team-soc-item-icon"
-              href=""
-              target="_blank"
-              rel="nooperener noreferrer"
-            >
-              <svg class="team-soc-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-instagram-2"></use>
-              </svg>
-            </a>
-          </li>
-
-          <li class="team-soc-item">
-            <a
-              class="team-soc-item-icon"
-              href=""
-              target="_blank"
-              rel="nooperener noreferrer"
-            >
-              <svg class="team-soc-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-twitter-1"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="team-soc-item">
-            <a
-              class="team-soc-item-icon"
-              href=""
-              target="_blank"
-              rel="nooperener noreferrer"
-            >
-              <svg class="team-soc-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-facebook-1"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="team-soc-item">
-            <a
-              class="team-soc-item-icon"
-              href=""
-              target="_blank"
-              rel="nooperener noreferrer"
-            >
-              <svg class="team-soc-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-linkedin-1"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
 
     <div class="backdrop">
       <div class="modal">
