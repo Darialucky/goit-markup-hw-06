@@ -152,15 +152,7 @@ ul {
 }
 
 .menu-open-mob {
-  /*fill: #2f2f37;
-  border: none;
-  background-color: transparent;
-  padding: 0;
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 24px;
-  height: 24px;*/
+  border: 1px solid #0000001a;
 }
 
 .header-menu-list-one {
@@ -367,7 +359,7 @@ ul {
   letter-spacing: 0.02em;
 }
 
-/*---------=====OUR TEAM=====---------*/
+/*---------=====OUR TEAM=============================---------*/
 
 .main-team {
   background-color: #f4f4fd;
@@ -388,11 +380,11 @@ ul {
 .our-team {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 72px;
 }
 
 .our-team-item {
-  margin: 0 auto;
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -596,6 +588,7 @@ ul {
   justify-content: center;
   align-items: center;
   margin-bottom: 72px;
+  margin-top: 72px;
 }
 
 .container-footer-two {
@@ -718,7 +711,121 @@ ul {
   margin-left: 16px;
 }
 
-/**==========================*/
+/**=============MODALS===============================================*/
+
+.modal-mob {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  top: 0;
+  left: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-mob-open {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  min-height: 640px;
+  background: #fff;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 24px 24px 40px 16px;
+}
+
+.modal-btn-mob {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  border: none;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn-mob:hover,
+.modal-btn-mob:focus {
+  background-color: #404bbf;
+  border: none;
+  fill: #ffffff;
+}
+
+.header-menu-list-mob-title {
+  color: #2e2f42;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.header-menu-list-mob-title:hover,
+.header-menu-list-mob-title:focus {
+  color: #404bbf;
+}
+
+.menu-mob {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-top: 48px;
+  padding-bottom: 168px;
+}
+
+.header-address-mob {
+  font-style: normal;
+  margin-left: auto;
+}
+
+.header-contacts-mob {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+}
+
+.header-contacts-main-mob {
+  color: #434455;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-contacts-main-mob:hover,
+header-contacts-main-mob:focus {
+  color: #404bbf;
+}
+
+.team-soc-list-mob {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+  gap: 40px;
+  align-items: center;
+}
 
 .backdrop {
   display: block;
@@ -941,7 +1048,7 @@ ul {
   visibility: visible;
   pointer-events: auto;
 }
-
+/*=======================media=================*/
 @media screen and (min-width: 320px) {
 }
 
@@ -952,6 +1059,10 @@ ul {
 
   .header-for-pc {
     display: flex;
+  }
+
+  .modal-mob {
+    display: none;
   }
 
   .header-for-mobile {
@@ -1040,16 +1151,17 @@ ul {
   }
 
   .container-footer {
-    justify-content: center;
+    padding-left: 108px;
+    padding-right: 164px;
   }
 
   .container-footer-webstudio {
-    margin-right: 24px;
     margin-bottom: 72px;
   }
 
   .social-media-footer {
     display: block;
+    margin-top: 0;
   }
 
   .footer-subscribe {
@@ -1059,6 +1171,7 @@ ul {
   .footer-form {
   }
 }
+/*==========================1158==========================*/
 
 @media screen and (min-width: 1158px) {
   .container {
@@ -1132,6 +1245,10 @@ ul {
     margin-bottom: 8px;
   }
 
+  .modal-mob {
+    display: none;
+  }
+
   .main {
     padding-top: 188px;
     padding-bottom: 188px;
@@ -1194,10 +1311,6 @@ ul {
   .our-portfolio-section {
     padding-top: 120px;
     padding-bottom: 120px;
-  }
-
-  .our-portfolio {
-    margin-top: 120px;
   }
 
   .portfolio {
