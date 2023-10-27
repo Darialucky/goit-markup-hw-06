@@ -152,7 +152,8 @@ ul {
 }
 
 .menu-open-mob {
-  border: 1px solid #0000001a;
+  border: none;
+  background-color: transparent;
   margin-left: auto;
 }
 /**=============MODAL-MOB===============================================*/
@@ -500,6 +501,7 @@ header-contacts-main-mob:focus {
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 8px;
 }
 .content-info-item-text {
   /* color: #434455;
@@ -1118,7 +1120,9 @@ header-contacts-main-mob:focus {
   }
 
   .header-contacts {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
   }
 
   .header-contacts-main {
